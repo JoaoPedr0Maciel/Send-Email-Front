@@ -20,8 +20,6 @@ function App() {
         email,
       });
 
-      setIsLoading("Enviado");
-
       setName("");
       setLastName("");
       setEmail("");
