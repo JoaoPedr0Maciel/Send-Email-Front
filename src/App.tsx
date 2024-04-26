@@ -13,21 +13,17 @@ function App() {
 
     setIsLoading(true);
 
-    try {
-      await api.post("/send", {
-        name,
-        lastName,
-        email,
-      });
+    await api.post("/send", {
+      name,
+      lastName,
+      email,
+    });
 
-      setName("");
-      setLastName("");
-      setEmail("");
-    } catch (error) {
-      console.error("Erro ao enviar email:", error);
-    } finally {
-      setIsLoading(false);
-    }
+    setName("");
+    setLastName("");
+    setEmail("");
+
+    setIsLoading(false);
   }
 
   return (
