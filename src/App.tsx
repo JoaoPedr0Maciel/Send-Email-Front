@@ -37,10 +37,12 @@ function App() {
             className="bg-[#E4EFFC] w-full px-2 py-2 rounded-lg border-none outline-none"
             type="text"
             placeholder="Name"
+            value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             className="bg-[#E4EFFC] w-full px-2 py-2 rounded-lg border-none outline-none"
+            value={lastName}
             type="text"
             placeholder="Last name"
             onChange={(e) => setLastName(e.target.value)}
@@ -49,6 +51,7 @@ function App() {
         <input
           className="bg-[#E4EFFC] px-2 py-2 w-full rounded-lg border-none outline-none"
           type="email"
+          value={email}
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
